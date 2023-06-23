@@ -1,0 +1,98 @@
+ <!-- File: index.html
+GUI Assignment: HW 3-Create multiplication table
+Victoria Munroe victoria_munroe@student.uml.edu
+Description: Website to take input & return multiplication table
+This page holds the html scaffoliding
+
+Copyright (c) 2023 by VMunroe. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+created by VM 06/15x/23
+
+Sources: 
+w3Schools w3schools.com
+TutorialsPoint 
+Traversy https://www.youtube.com/watch?v=hdI2bqOjy3c&t=4419s
+ 
+-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Multiplication table </title>
+    
+
+    <meta charset="utf-8">
+    <link href = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css " rel = "stylesheet">
+    <link href="Style/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Multiplication Table</Table></h1>
+        </header>
+       <!-- Source https://www.youtube.com/watch?v=hdI2bqOjy3c&t=3568s
+            Visual Inspiration:
+        https://www.jesseheines.com/~heines/91.461/91.461-2012-13f/461-lecs/code/jmh-table-v1.html?xBegin=5&xEnd=10&yBegin=1&yEnd=5 
+             -->
+        <div class="container">
+        
+            <div class="AAAAH">
+                <div id="info"></div>
+                <h3>Add Number Range</h3>
+               
+                <form id="numberInput">
+                    <div>
+                        <label for="minX">Minimum Row Number:</label>
+                        <input type="text" id="minX" class="numInputBox" name="minX">   
+                    </div>
+                    <div id="minXSlider" class="sliders"></div>
+                    <div>
+                        <label for="maxX">Maximum Row Number:</label>
+                        <input type="text" id="maxX" class="numInputBox"  name="maxX">
+                    </div>
+                    <div id="maxXSlider" class="sliders"></div>
+                    <div>
+                        <label for="minY">Minimum Column Number:</label>
+                        <input type="text" id="minY" class="numInputBox "  name="minY">
+                    </div>
+                    <div id="minYSlider" class="sliders"></div>
+                    <div>
+                        <label for="maxY">Maximum Column Number:</label>
+                        <input type="text" id="maxY" class="numInputBox"  name="maxY"> 
+                    </div>
+                    <div id="maxYSlider" class="sliders"></div>
+                </form>
+                <button type="button" id="clear">Clear</button>
+            </div>
+            <div id="tblcont">
+                <div id="tabs">
+                    <ul>
+                    </ul>
+                    <div id="tables">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="development-bundle/ui/jquery.ui.tabs.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="Script/main.js"></script>
+    <script>
+        (function($){
+        $("#tabs").tabs();
+        })(jQuery);
+        </script>
+</body>
+
+</html>

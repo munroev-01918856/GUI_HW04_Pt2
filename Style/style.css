@@ -1,0 +1,116 @@
+/* File: index.html
+GUI Assignment: HW 3-Create multiplication table
+Victoria Munroe victoria_munroe@student.uml.edu
+Description: Website to take input & return multiplication table
+This page holds the html scaffoliding
+
+Copyright (c) 2023 by VMunroe. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+created by VM 06/15x/23
+
+Sources: 
+w3Schools w3schools.com
+TutorialsPoint 
+Traversy https://www.youtube.com/watch?v=hdI2bqOjy3c&t=4419s */
+
+/* General Formatting */
+body{
+    height: 100%;
+    width: 100%; 
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 2%;
+    background-image: url("../Images/background.png");
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color:rgb(7, 116, 116);
+    font-style: bold;
+
+}
+
+div {
+    margin: 0 auto;
+    width: max-content;
+    
+}
+/*#minXSlider {
+    display: inline-block;
+   
+
+   }*/
+
+
+/* Numbers Input */
+#numberInput{
+    width:max-content;
+    padding: 5% 10%;
+    border-style: solid;
+    text-align: left;
+    display: table;
+}
+#numberInput div{
+	display: table-row;
+}
+#numberInput label{
+	display: table-cell;
+}
+#numberInput input{
+	display: table-cell;
+}
+#numberInput div.sliders{
+	display: table-cell;
+}
+
+.AAAAH{
+    float:left;
+}
+
+table {
+    width: 100%;
+}
+
+#tblcont{
+    clear:both;
+	overflow: auto;
+    width: 600px;
+	height: 300px;
+    border-style: solid;
+    border:black;
+}
+
+#tblcont thead th{
+    position: sticky;
+    top: 0px;
+	background: #ffff;
+}
+
+#tblcont td.headers{
+    position: sticky;
+    left: 0px;
+	background: #ffff;
+}
+
+
+tr:nth-child(even) {
+    background-color: lightsteelblue;
+}
+tr:nth-child(odd) {
+    background-color:lightgrey;
+}
+
+
+#info{
+    font-style: italic;
+    clear: both;
+}
+
+
+
+tr:first-child, td:first-child{
+    font-weight: bold;
+    background-color: white;
+    padding-bottom: 10px;
+    margin: 10px;
+}
